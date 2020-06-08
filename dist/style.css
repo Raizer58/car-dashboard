@@ -512,16 +512,16 @@ main .main__first-design {
     offset-distance: 75%; } }
     main .main__first-design .main__sixth-block .sixth-block__rpmVHR-screen-values {
       position: absolute;
-      top: 29%;
-      left: 32.75%;
-      width: 35%;
-      height: 25px;
+      top: 30%;
+      left: 35%;
+      width: 30%;
+      height: 22px;
       text-align: center;
       background: radial-gradient(#646464, #1e1e1e);
       border-radius: 5px;
       box-shadow: 0 0 2px 1px white, 0 0 4px 2px rgba(255, 255, 255, 0.8); }
       main .main__first-design .main__sixth-block .sixth-block__rpmVHR-screen-values p {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         font-family: Aldrich, arial, sans-serif;
         margin-block-start: 0em;
         margin-block-end: 0em; }
