@@ -623,11 +623,11 @@ main .main__first-design {
       border-radius: 1000px; }
     main .main__first-design .main__sixth-block_shadow::after {
       content: "";
-      width: 280px;
-      height: 280px;
       position: absolute;
       top: calc(50% - 140px);
       left: calc(50% - 140px);
+      width: 280px;
+      height: 280px;
       background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 40%, rgba(200, 220, 40, 0.8) 55%, rgba(201, 224, 20, 0.8) 63%, rgba(0, 0, 0, 0) 66%, rgba(0, 0, 0, 0) 100%);
       clip-path: polygon(50% 50%, 100% 17%, 95% 1%);
       border-radius: 1000px; }
