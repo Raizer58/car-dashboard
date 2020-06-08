@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'Aldrich';
+  src: url(75395156257a5c9481486157d65f1e8a.ttf); }
+
 body {
   width: 100vw;
   height: 100vh;
@@ -33,111 +37,533 @@ main {
       position: relative;
       justify-content: space-between;
       color: white;
-      background: linear-gradient(90deg, black, rgba(172, 172, 172, 0) 45%, rgba(199, 199, 199, 0) 55%, black 100%), linear-gradient(180deg, black, black 10%, #c8c8c8 10%, #c8c8c8 25%, black 35%, #c8c8c8 35%, black 100%); }
+      background: linear-gradient(90deg, black, rgba(199, 199, 199, 0) 48%, rgba(199, 199, 199, 0) 52%, black 100%), linear-gradient(180deg, black, black 10%, #c8c8c8 10%, #c8c8c8 25%, black 35%, #c8c8c8 35%, black 100%); }
       main .main__first-design .main__first-block p,
       main .main__first-design .main__second-block p,
       main .main__first-design .main__third-block p,
       main .main__first-design .main__fourth-block p,
       main .main__first-design .main__fifth-block p {
         margin: 0%;
+        font-family: Aldrich, arial, sans-serif;
         font-size: 0.7rem;
-        color: white; }
-    main .main__first-design .second-block__map,
-    main .main__first-design .third-block__egoCorrection,
+        font-weight: 900;
+        color: #b4b4b4; }
+    main .main__first-design .first-block__mat,
     main .main__first-design .fourth-block__coolant,
-    main .main__first-design .fifth-block__mat {
+    main .main__first-design .fifth-block__gear-temp,
+    main .main__first-design .fourth-block__oil-press,
+    main .main__first-design .third-block__oil-temp {
       position: absolute;
       top: 35%;
       left: 5%;
       width: 17%;
       z-index: 5; }
-    main .main__first-design .fourth-block__lambda,
-    main .main__first-design .fifth-block__voltage,
-    main .main__first-design .third-block__afr {
+    main .main__first-design .first-block__voltage,
+    main .main__first-design .second-block__afr,
+    main .main__first-design .fifth-block__egt {
       position: absolute;
       top: 35%;
       right: 5%;
       width: 17%;
       z-index: 5; }
-    main .main__first-design .second-block__map-marking,
-    main .main__first-design .third-block__egoCorrection-marking,
+    main .main__first-design .first-block__mat-marking,
     main .main__first-design .fourth-block__coolant-marking,
-    main .main__first-design .fifth-block__mat-marking,
-    main .main__first-design .fourth-block__lambda-marking,
-    main .main__first-design .fifth-block__voltage-marking,
-    main .main__first-design .third-block__afr-marking {
+    main .main__first-design .fifth-block__gear-temp-marking,
+    main .main__first-design .fourth-block__oil-press-marking,
+    main .main__first-design .third-block__oil-temp-marking,
+    main .main__first-design .first-block__voltage-marking,
+    main .main__first-design .second-block__afr-marking,
+    main .main__first-design .fifth-block__egt-marking {
       display: flex;
       justify-content: space-between; }
-    main .main__first-design .second-block__map-indicator > p,
-    main .main__first-design .third-block__egoCorrection-indicator > p,
-    main .main__first-design .fourth-block__coolant-indicator > p,
-    main .main__first-design .fifth-block__mat-indicator > p,
-    main .main__first-design .fourth-block__lambda-indicator > p,
-    main .main__first-design .fifth-block__voltage-indicator > p,
-    main .main__first-design .third-block__afr-indicator > p {
-      font-size: 1.2rem;
-      color: red; }
-    main .main__first-design .second-block__map-indicator > p,
-    main .main__first-design .third-block__egoCorrection-indicator > p,
-    main .main__first-design .fourth-block__coolant-indicator > p,
-    main .main__first-design .fifth-block__mat-indicator > p {
-      text-align: left; }
-    main .main__first-design .fourth-block__lambda-indicator > p,
-    main .main__first-design .fifth-block__voltage-indicator > p,
-    main .main__first-design .third-block__afr-indicator > p {
-      text-align: right; }
+    main .main__first-design .first-block__mat-indicator > p,
+    main .main__first-design .fifth-block__gear-temp-indicator > p,
+    main .main__first-design .fourth-block__oil-press-indicator > p,
+    main .main__first-design .third-block__oil-temp-indicator > p,
+    main .main__first-design .fourth-block__coolant-indicator > p {
+      text-align: left;
+      font-size: 1.1rem;
+      color: white;
+      text-shadow: 0 0 2px white, 0 0 4px rgba(255, 255, 255, 0.6); }
+    main .main__first-design .first-block__voltage-indicator > p,
+    main .main__first-design .second-block__afr-indicator > p,
+    main .main__first-design .fifth-block__egt-indicator > p {
+      text-align: right;
+      font-size: 1.1rem;
+      color: white;
+      text-shadow: 0 0 2px white, 0 0 4px rgba(255, 255, 255, 0.6); }
     main .main__first-design .main__sixth-block {
       width: 250px;
       height: 250px;
       position: absolute;
       top: calc(50% - 130px);
       left: calc(50% - 130px);
-      background: linear-gradient(0deg, black, #3c3c3c 100%);
-      color: red;
       border: 5px solid #b4b4b4;
+      color: #c9c9c9;
       border-radius: 1000px;
       box-shadow: 0px 0px 10px 10px black;
-      /*&::before {
-        content: "";
-        position: absolute;
-        left: 0px;
-        top: 0px;
+      z-index: 5; }
+      main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values {
         width: 250px;
         height: 250px;
-        border-radius: 1000px;
-        background: radial-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, rgb(17, 17, 17) 65%, rgb(0, 0, 0) 100%);
-        transition: all .05s ease-in-out;
-      }*/ }
-      main .main__first-design .main__sixth-block::after {
-        content: "x1000 rpm";
-        position: absolute;
-        font-size: 1.2rem;
-        top: 25%;
-        left: calc(50% - 41.85px);
-        color: #c80a0a;
-        text-shadow: 0px 0px 2px #ff0a0a; }
+        position: relative;
+        top: calc(50% - 130px);
+        left: calc(50% - 130px);
+        transform: rotate(-90deg); }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values p {
+          position: absolute;
+          top: -11%;
+          left: 0%;
+          font-family: Aldrich, arial, sans-serif;
+          font-size: 1.6rem;
+          width: 2.5px;
+          height: 7.5px;
+          color: white;
+          text-shadow: 0 0 2px white, 0 0 4px rgba(255, 255, 255, 0.6);
+          background: white;
+          animation-fill-mode: both;
+          offset-path: path("M 15 125 C 15 64.289 64.289 15 125 15 C 155.355 15 182.855 27.322 202.766 47.234 C 222.678 67.145 235 94.645 235 125 C 235 171.944 205.53 212.059 164.096 227.838 C 151.946 232.466 138.767 235 125 235 C 64.289 235 15 185.711 15 125 Z"); }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-0,
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-5,
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-10,
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-15,
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-20,
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-25,
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-30,
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-35,
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-40 {
+          width: 5px;
+          height: 15px; }
+          main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-0::before,
+          main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-5::before,
+          main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-10::before,
+          main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-15::before,
+          main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-20::before,
+          main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-25::before,
+          main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-30::before,
+          main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-35::before,
+          main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-40::before {
+            position: absolute;
+            top: 100%; }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-0 {
+          animation-name: rpmVHR-values-0; }
+          main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-0::before {
+            content: "0";
+            left: calc(50% - 23.363px / 2); }
+
+@keyframes rpmVHR-values-0 {
+  from {
+    offset-distance: 0%; }
+  to {
+    offset-distance: 0%; } }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-1 {
+          animation-name: rpmVHR-values-1; }
+
+@keyframes rpmVHR-values-1 {
+  from {
+    offset-distance: 0%; }
+  to {
+    offset-distance: 1.875%; } }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-2 {
+          animation-name: rpmVHR-values-2; }
+
+@keyframes rpmVHR-values-2 {
+  from {
+    offset-distance: 0%; }
+  to {
+    offset-distance: 3.75%; } }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-3 {
+          animation-name: rpmVHR-values-3; }
+
+@keyframes rpmVHR-values-3 {
+  from {
+    offset-distance: 0%; }
+  to {
+    offset-distance: 5.625%; } }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-4 {
+          animation-name: rpmVHR-values-4; }
+
+@keyframes rpmVHR-values-4 {
+  from {
+    offset-distance: 0%; }
+  to {
+    offset-distance: 7.5%; } }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-5 {
+          animation-name: rpmVHR-values-5; }
+          main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-5::before {
+            content: "1";
+            left: calc(50% - 11.23px / 2);
+            transform: rotate(150deg); }
+
+@keyframes rpmVHR-values-5 {
+  from {
+    offset-distance: 0%; }
+  to {
+    offset-distance: 9.375%; } }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-6 {
+          animation-name: rpmVHR-values-6; }
+
+@keyframes rpmVHR-values-6 {
+  from {
+    offset-distance: 0%; }
+  to {
+    offset-distance: 11.25%; } }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-7 {
+          animation-name: rpmVHR-values-7; }
+
+@keyframes rpmVHR-values-7 {
+  from {
+    offset-distance: 0%; }
+  to {
+    offset-distance: 13.125%; } }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-8 {
+          animation-name: rpmVHR-values-8; }
+
+@keyframes rpmVHR-values-8 {
+  from {
+    offset-distance: 0%; }
+  to {
+    offset-distance: 15%; } }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-9 {
+          animation-name: rpmVHR-values-9; }
+
+@keyframes rpmVHR-values-9 {
+  from {
+    offset-distance: 0%; }
+  to {
+    offset-distance: 16.875%; } }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-10 {
+          animation-name: rpmVHR-values-10; }
+          main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-10::before {
+            content: "2";
+            left: calc(50% - 22.087px / 2);
+            transform: rotate(115deg); }
+
+@keyframes rpmVHR-values-10 {
+  from {
+    offset-distance: 0%; }
+  to {
+    offset-distance: 18.75%; } }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-11 {
+          animation-name: rpmVHR-values-11; }
+
+@keyframes rpmVHR-values-11 {
+  from {
+    offset-distance: 0%; }
+  to {
+    offset-distance: 20.625%; } }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-12 {
+          animation-name: rpmVHR-values-12; }
+
+@keyframes rpmVHR-values-12 {
+  from {
+    offset-distance: 0%; }
+  to {
+    offset-distance: 22.5%; } }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-13 {
+          animation-name: rpmVHR-values-13; }
+
+@keyframes rpmVHR-values-13 {
+  from {
+    offset-distance: 0%; }
+  to {
+    offset-distance: 24.375%; } }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-14 {
+          animation-name: rpmVHR-values-14; }
+
+@keyframes rpmVHR-values-14 {
+  from {
+    offset-distance: 0%; }
+  to {
+    offset-distance: 26.25%; } }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-15 {
+          animation-name: rpmVHR-values-15; }
+          main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-15::before {
+            content: "3";
+            left: calc(50% - 21.063px / 2);
+            transform: rotate(80deg); }
+
+@keyframes rpmVHR-values-15 {
+  from {
+    offset-distance: 0%; }
+  to {
+    offset-distance: 28.125%; } }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-16 {
+          animation-name: rpmVHR-values-16; }
+
+@keyframes rpmVHR-values-16 {
+  from {
+    offset-distance: 0%; }
+  to {
+    offset-distance: 30%; } }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-17 {
+          animation-name: rpmVHR-values-17; }
+
+@keyframes rpmVHR-values-17 {
+  from {
+    offset-distance: 0%; }
+  to {
+    offset-distance: 31.875%; } }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-18 {
+          animation-name: rpmVHR-values-18; }
+
+@keyframes rpmVHR-values-18 {
+  from {
+    offset-distance: 0%; }
+  to {
+    offset-distance: 33.75%; } }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-19 {
+          animation-name: rpmVHR-values-19; }
+
+@keyframes rpmVHR-values-19 {
+  from {
+    offset-distance: 0%; }
+  to {
+    offset-distance: 35.625%; } }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-20 {
+          animation-name: rpmVHR-values-20; }
+          main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-20::before {
+            content: "4";
+            left: calc(50% - 19.425px / 2);
+            transform: rotate(45deg); }
+
+@keyframes rpmVHR-values-20 {
+  from {
+    offset-distance: 0%; }
+  to {
+    offset-distance: 37.5%; } }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-21 {
+          animation-name: rpmVHR-values-21; }
+
+@keyframes rpmVHR-values-21 {
+  from {
+    offset-distance: 0%; }
+  to {
+    offset-distance: 39.375%; } }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-22 {
+          animation-name: rpmVHR-values-22; }
+
+@keyframes rpmVHR-values-22 {
+  from {
+    offset-distance: 0%; }
+  to {
+    offset-distance: 41.25%; } }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-23 {
+          animation-name: rpmVHR-values-23; }
+
+@keyframes rpmVHR-values-23 {
+  from {
+    offset-distance: 0%; }
+  to {
+    offset-distance: 43.125%; } }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-24 {
+          animation-name: rpmVHR-values-24; }
+
+@keyframes rpmVHR-values-24 {
+  from {
+    offset-distance: 0%; }
+  to {
+    offset-distance: 45%; } }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-25 {
+          animation-name: rpmVHR-values-25; }
+          main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-25::before {
+            content: "5";
+            left: calc(50% - 20.425px / 2);
+            transform: rotate(11deg); }
+
+@keyframes rpmVHR-values-25 {
+  from {
+    offset-distance: 0%; }
+  to {
+    offset-distance: 46.875%; } }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-26 {
+          animation-name: rpmVHR-values-26; }
+
+@keyframes rpmVHR-values-26 {
+  from {
+    offset-distance: 0%; }
+  to {
+    offset-distance: 48.75%; } }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-27 {
+          animation-name: rpmVHR-values-27; }
+
+@keyframes rpmVHR-values-27 {
+  from {
+    offset-distance: 0%; }
+  to {
+    offset-distance: 50.625%; } }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-28 {
+          animation-name: rpmVHR-values-28; }
+
+@keyframes rpmVHR-values-28 {
+  from {
+    offset-distance: 0%; }
+  to {
+    offset-distance: 52.5%; } }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-29 {
+          animation-name: rpmVHR-values-29; }
+
+@keyframes rpmVHR-values-29 {
+  from {
+    offset-distance: 0%; }
+  to {
+    offset-distance: 54.375%; } }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-30 {
+          animation-name: rpmVHR-values-30; }
+          main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-30::before {
+            content: "6";
+            left: calc(50% - 22.413px / 2);
+            transform: rotate(-21deg); }
+
+@keyframes rpmVHR-values-30 {
+  from {
+    offset-distance: 0%; }
+  to {
+    offset-distance: 56.25%; } }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-31 {
+          animation-name: rpmVHR-values-31; }
+
+@keyframes rpmVHR-values-31 {
+  from {
+    offset-distance: 0%; }
+  to {
+    offset-distance: 58.125%; } }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-32 {
+          animation-name: rpmVHR-values-32; }
+
+@keyframes rpmVHR-values-32 {
+  from {
+    offset-distance: 0%; }
+  to {
+    offset-distance: 60%; } }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-33 {
+          animation-name: rpmVHR-values-33;
+          background: yellow; }
+
+@keyframes rpmVHR-values-33 {
+  from {
+    offset-distance: 0%; }
+  to {
+    offset-distance: 61.875%; } }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-34 {
+          animation-name: rpmVHR-values-34;
+          background: yellow; }
+
+@keyframes rpmVHR-values-34 {
+  from {
+    offset-distance: 0%; }
+  to {
+    offset-distance: 63.75%; } }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-35 {
+          animation-name: rpmVHR-values-35;
+          background: red;
+          color: red;
+          text-shadow: 0 0 2px red, 0 0 4px rgba(255, 0, 0, 0.6); }
+          main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-35::before {
+            content: "7";
+            left: calc(50% - 18.875px / 2);
+            transform: rotate(-55deg); }
+
+@keyframes rpmVHR-values-35 {
+  from {
+    offset-distance: 0%; }
+  to {
+    offset-distance: 65.625%; } }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-36 {
+          animation-name: rpmVHR-values-36;
+          background: red; }
+
+@keyframes rpmVHR-values-36 {
+  from {
+    offset-distance: 0%; }
+  to {
+    offset-distance: 67.5%; } }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-37 {
+          animation-name: rpmVHR-values-37;
+          background: red; }
+
+@keyframes rpmVHR-values-37 {
+  from {
+    offset-distance: 0%; }
+  to {
+    offset-distance: 69.375%; } }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-38 {
+          animation-name: rpmVHR-values-38;
+          background: red; }
+
+@keyframes rpmVHR-values-38 {
+  from {
+    offset-distance: 0%; }
+  to {
+    offset-distance: 71.25%; } }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-39 {
+          animation-name: rpmVHR-values-39;
+          background: red; }
+
+@keyframes rpmVHR-values-39 {
+  from {
+    offset-distance: 0%; }
+  to {
+    offset-distance: 73.125%; } }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-40 {
+          animation-name: rpmVHR-values-40;
+          background: red;
+          color: red;
+          text-shadow: 0 0 2px red, 0 0 4px rgba(255, 0, 0, 0.6); }
+          main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-40::before {
+            content: "8";
+            left: calc(50% - 22.025px / 2);
+            transform: rotate(-90deg); }
+
+@keyframes rpmVHR-values-40 {
+  from {
+    offset-distance: 0%; }
+  to {
+    offset-distance: 75%; } }
       main .main__first-design .main__sixth-block .sixth-block__rpmVHR-arrow {
-        width: 50%;
+        width: 40%;
         position: absolute;
-        top: 50%;
+        top: calc(50% - 6px);
         left: 10%;
-        height: 4px;
-        border-radius: 2px;
-        background: linear-gradient(270deg, yellow, red 50%);
-        box-shadow: 0px 0px 10px .5px;
-        transform-origin: 80% 50%;
+        height: 12px;
+        border-radius: 10px;
+        background: linear-gradient(180deg, transparent, red 49%, red 51%, transparent), linear-gradient(180deg, transparent 40%, rgba(255, 0, 0, 0.8) 48%, rgba(255, 0, 0, 0.8) 52%, transparent 60%), linear-gradient(180deg, transparent 35%, rgba(255, 0, 0, 0.7) 47%, rgba(255, 0, 0, 0.7) 53%, transparent 65%), linear-gradient(180deg, transparent 30%, rgba(255, 0, 0, 0.6) 46%, rgba(255, 0, 0, 0.6) 54%, transparent 70%);
+        clip-path: polygon(100% 0%, 100% 100%, 0% 65%, 0% 35%);
+        transform-origin: 100% 50%;
         transition: transform .05s ease-in-out;
         z-index: 5; }
-        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-arrow::before {
+      main .main__first-design .main__sixth-block .sixth-block__rpmVHR-point {
+        position: absolute;
+        top: 42.2%;
+        left: 42.2%;
+        width: 15%;
+        height: 15%;
+        border-radius: 100px;
+        background: #414141;
+        box-shadow: 0 0 2px 1px white, 0 0 4px 2px rgba(255, 255, 255, 0.8);
+        transform-origin: 50% 50%;
+        transition: transform .05s ease-in-out;
+        z-index: 10; }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-point::before {
           content: "";
           position: absolute;
-          top: -5.5px;
-          left: 76%;
-          width: 15px;
-          height: 15px;
+          width: 92%;
+          height: 92%;
+          top: 0%;
+          left: 0%;
+          background: #414141;
+          border: 1.5px solid rgba(65, 65, 65, 0.8);
+          border-radius: 100px; }
+        main .main__first-design .main__sixth-block .sixth-block__rpmVHR-point::after {
+          content: "";
+          position: absolute;
+          width: 70%;
+          height: 100%;
+          top: 20%;
+          left: 16%;
           border-radius: 10px;
-          background-color: red;
-          box-shadow: 0px 0px 10px 1px; }
+          background: linear-gradient(90deg, #191919, #191919 42.5%, black 42.5%, black 57.5%, #191919 57.5%);
+          clip-path: polygon(90% 0%, 10% 0%, 25% 100%, 75% 100%); }
       main .main__first-design .main__sixth-block .sixth-block__speed {
         display: flex;
         align-items: center;
@@ -147,40 +573,75 @@ main {
         position: absolute;
         bottom: 15%;
         right: 20%;
-        background: radial-gradient(#969696, #1e1e1e);
-        border: 2px solid #aa0f0f;
+        background: radial-gradient(#646464, #1e1e1e);
         border-radius: 50px;
-        box-shadow: 0px 0px 3px 3px rgba(200, 10, 10, 0.5); }
+        box-shadow: 0 0 2px 1px white, 0 0 4px 2px rgba(255, 255, 255, 0.8); }
         main .main__first-design .main__sixth-block .sixth-block__speed p {
-          font-size: 1.4rem; }
-        main .main__first-design .main__sixth-block .sixth-block__speed::before {
-          content: "km/h";
-          position: absolute;
-          font-size: 1rem;
-          top: 62%;
-          left: calc(50% - 16.45px);
-          color: rgba(255, 255, 255, 0.7); }
+          font-size: 1.6rem;
+          font-family: Aldrich, arial, sans-serif;
+          color: white;
+          text-shadow: 0 0 2px white, 0 0 4px rgba(255, 255, 255, 0.6); }
       main .main__first-design .main__sixth-block .sixth-block__gear {
         position: absolute;
         display: flex;
         justify-content: center;
         align-items: center;
-        top: 40%;
-        right: 26%;
-        width: 35px;
-        height: 35px;
+        top: 43%;
+        right: 27%;
+        width: 9%;
+        height: 9%;
         border: 1px solid #c8c8c8;
         background: radial-gradient(#4b4b4b, #1e1e1e);
-        box-shadow: 0px 0px 5px 0.5px white; }
+        box-shadow: 0 0 2px 1px white, 0 0 4px 2px rgba(255, 255, 255, 0.8); }
         main .main__first-design .main__sixth-block .sixth-block__gear p {
-          font-size: 1.4rem;
-          color: #c9c9c9;
-          text-shadow: 0px 0px 2px #e6e6e6; }
+          font-size: 1.2rem;
+          font-family: Aldrich, arial, sans-serif;
+          color: white;
+          text-shadow: 0 0 2px white, 0 0 4px rgba(255, 255, 255, 0.6); }
     main .main__first-design .main__sixth-block_shadow {
       width: 250px;
       height: 250px;
       position: absolute;
       top: calc(50% - 125px);
       left: calc(50% - 125px);
-      background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, #111111 65%, black 100%);
+      background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, #111111 65%, black 100%), radial-gradient(black, #323232 100%);
       border-radius: 1000px; }
+      main .main__first-design .main__sixth-block_shadow::before {
+        content: "";
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        top: calc(50% - 125px);
+        left: calc(50% - 125px);
+        background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 40%, rgba(220, 40, 40, 0.8) 55%, rgba(220, 20, 2, 0.8) 60%, rgba(0, 0, 0, 0) 63%, rgba(0, 0, 0, 0) 100%);
+        clip-path: polygon(50% 50%, 100% 50%, 100% 17%);
+        border-radius: 1000px; }
+      main .main__first-design .main__sixth-block_shadow::after {
+        content: "";
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        top: calc(50% - 125px);
+        left: calc(50% - 125px);
+        background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 40%, rgba(200, 220, 40, 0.8) 55%, rgba(201, 224, 20, 0.8) 60%, rgba(0, 0, 0, 0) 63%, rgba(0, 0, 0, 0) 100%);
+        clip-path: polygon(50% 50%, 100% 17%, 95% 1%);
+        border-radius: 1000px; }
+    main .main__first-design .main__sixth-block_shadow-red-zone {
+      width: 250px;
+      height: 250px;
+      position: absolute;
+      top: calc(50% - 125px);
+      left: calc(50% - 125px);
+      background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 58%, red 58%, red 61%, rgba(0, 0, 0, 0) 61%, rgba(0, 0, 0, 0) 100%);
+      clip-path: polygon(50% 50%, 100% 50%, 95% 20%);
+      border-radius: 1000px;
+      z-index: 5; }
+    main .main__first-design .main__sixth-block_shadow-rotate {
+      width: 250px;
+      height: 250px;
+      position: absolute;
+      top: calc(50% - 125px);
+      left: calc(50% - 125px);
+      background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, #111111 65%, black 100%), radial-gradient(black, #323232 100%);
+      border-radius: 1000px;
+      clip-path: polygon(50% 50%, 49% 100%, 0% 100%, 0% 0%, 100% 0%, 100% 50%); }
