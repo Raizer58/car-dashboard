@@ -5,10 +5,6 @@
 body {
   margin: 0px;
   background: black; }
-  body .wrapper {
-    max-width: 580px;
-    margin-left: auto;
-    margin-right: auto; }
 
 main .main__first-design {
   display: flex;
@@ -35,7 +31,7 @@ main .main__first-design {
     main .main__first-design .main__fifth-block p {
       margin: 0%;
       font-family: Aldrich, arial, sans-serif;
-      font-size: 0.7rem;
+      font-size: 3.5vh;
       font-weight: 900;
       color: #b4b4b4; }
   main .main__first-design .first-block__mat,
@@ -46,15 +42,16 @@ main .main__first-design {
     position: absolute;
     top: 35%;
     left: 5%;
-    width: 17%;
+    width: 19vw;
     z-index: 5; }
   main .main__first-design .first-block__voltage,
   main .main__first-design .second-block__afr,
+  main .main__first-design .fourth-block__boost,
   main .main__first-design .fifth-block__egt {
     position: absolute;
     top: 35%;
     right: 5%;
-    width: 17%;
+    width: 19vw;
     z-index: 5; }
   main .main__first-design .first-block__mat-marking,
   main .main__first-design .fourth-block__coolant-marking,
@@ -63,6 +60,7 @@ main .main__first-design {
   main .main__first-design .third-block__oil-temp-marking,
   main .main__first-design .first-block__voltage-marking,
   main .main__first-design .second-block__afr-marking,
+  main .main__first-design .fourth-block__boost-marking,
   main .main__first-design .fifth-block__egt-marking {
     display: flex;
     justify-content: space-between; }
@@ -72,47 +70,49 @@ main .main__first-design {
   main .main__first-design .third-block__oil-temp-indicator > p,
   main .main__first-design .fourth-block__coolant-indicator > p {
     text-align: left;
-    font-size: 1.1rem;
+    font-size: 6vh;
     color: white;
     text-shadow: 0 0 2px white, 0 0 4px rgba(255, 255, 255, 0.6); }
   main .main__first-design .first-block__voltage-indicator > p,
   main .main__first-design .second-block__afr-indicator > p,
+  main .main__first-design .fourth-block__boost-indicator > p,
   main .main__first-design .fifth-block__egt-indicator > p {
     text-align: right;
-    font-size: 1.1rem;
+    font-size: 6vh;
     color: white;
     text-shadow: 0 0 2px white, 0 0 4px rgba(255, 255, 255, 0.6); }
   main .main__first-design .main__sixth-block {
-    width: 280px;
-    height: 280px;
+    width: 45vw;
+    height: 45vw;
     position: absolute;
-    top: calc(50% - 145px);
-    left: calc(50% - 145px);
+    top: calc(50% - 5px - 22.5vw);
+    left: calc(50% - 5px - 22.5vw);
     border: 5px solid #b4b4b4;
     color: #c9c9c9;
     border-radius: 1000px;
     box-shadow: 0px 0px 10px 10px black;
     z-index: 5; }
     main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values {
-      width: 280px;
-      height: 280px;
+      width: 45vw;
+      height: 45vw;
       position: relative;
-      top: calc(50% - 140px);
-      left: calc(50% - 140px);
+      top: calc(50% - 22.5vw);
+      left: calc(50% - 22.5vw);
       transform: rotate(-90deg); }
       main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values p {
         position: absolute;
-        top: -9%;
+        top: 0;
         left: 0%;
         font-family: Aldrich, arial, sans-serif;
-        font-size: 1.6rem;
-        width: 2.5px;
-        height: 7.5px;
+        font-size: 5vw;
+        width: 1%;
+        height: 3%;
         color: white;
         text-shadow: 0 0 2px white, 0 0 4px rgba(255, 255, 255, 0.6);
         background: white;
         animation-fill-mode: both;
-        offset-path: path("M 15 140 C 15 71.011 71.011 15 140 15 C 208.989 15 265 71.011 265 140 C 265 208.989 208.989 265 140 265 C 71.011 265 15 208.989 15 140 Z"); }
+        margin-block-start: 0em;
+        margin-block-end: 0em; }
       main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-0,
       main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-5,
       main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-10,
@@ -122,8 +122,8 @@ main .main__first-design {
       main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-30,
       main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-35,
       main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-40 {
-        width: 5px;
-        height: 15px; }
+        width: 2%;
+        height: 6%; }
         main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-0::before,
         main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-5::before,
         main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-10::before,
@@ -134,12 +134,12 @@ main .main__first-design {
         main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-35::before,
         main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-40::before {
           position: absolute;
-          top: 150%; }
+          top: 125%; }
       main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-0 {
         animation-name: rpmVHR-values-0; }
         main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-0::before {
           content: "0";
-          left: calc(50% - 18.688px / 2); }
+          left: calc(50% - 3.7vw / 2); }
 
 @keyframes rpmVHR-values-0 {
   from {
@@ -182,7 +182,7 @@ main .main__first-design {
         animation-name: rpmVHR-values-5; }
         main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-5::before {
           content: "1";
-          left: calc(50% - 8.963px / 2);
+          left: calc(50% - 1.5vw / 2);
           transform: rotate(150deg); }
 
 @keyframes rpmVHR-values-5 {
@@ -226,7 +226,7 @@ main .main__first-design {
         animation-name: rpmVHR-values-10; }
         main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-10::before {
           content: "2";
-          left: calc(50% - 17.663px / 2);
+          left: calc(50% - 2.5vw / 2);
           transform: rotate(115deg); }
 
 @keyframes rpmVHR-values-10 {
@@ -270,7 +270,7 @@ main .main__first-design {
         animation-name: rpmVHR-values-15; }
         main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-15::before {
           content: "3";
-          left: calc(50% - 16.850px / 2);
+          left: calc(50% - 2.5vw / 2);
           transform: rotate(80deg); }
 
 @keyframes rpmVHR-values-15 {
@@ -314,7 +314,7 @@ main .main__first-design {
         animation-name: rpmVHR-values-20; }
         main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-20::before {
           content: "4";
-          left: calc(50% - 15.537px / 2);
+          left: calc(50% - 2vw / 2);
           transform: rotate(45deg); }
 
 @keyframes rpmVHR-values-20 {
@@ -358,7 +358,7 @@ main .main__first-design {
         animation-name: rpmVHR-values-25; }
         main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-25::before {
           content: "5";
-          left: calc(50% - 16.337px / 2);
+          left: calc(50% - 2.5vw / 2);
           transform: rotate(11deg); }
 
 @keyframes rpmVHR-values-25 {
@@ -402,7 +402,7 @@ main .main__first-design {
         animation-name: rpmVHR-values-30; }
         main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-30::before {
           content: "6";
-          left: calc(50% - 17.925px / 2);
+          left: calc(50% - 3.5vw / 2);
           transform: rotate(-21deg); }
 
 @keyframes rpmVHR-values-30 {
@@ -451,7 +451,7 @@ main .main__first-design {
         text-shadow: 0 0 2px red, 0 0 4px rgba(255, 0, 0, 0.6); }
         main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-35::before {
           content: "7";
-          left: calc(50% - 15.100px / 2);
+          left: calc(50% - 1.5vw / 2);
           transform: rotate(-55deg); }
 
 @keyframes rpmVHR-values-35 {
@@ -502,7 +502,7 @@ main .main__first-design {
         text-shadow: 0 0 2px red, 0 0 4px rgba(255, 0, 0, 0.6); }
         main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-40::before {
           content: "8";
-          left: calc(50% - 17.613px / 2);
+          left: calc(50% - 3vw / 2);
           transform: rotate(-90deg); }
 
 @keyframes rpmVHR-values-40 {
@@ -512,16 +512,18 @@ main .main__first-design {
     offset-distance: 75%; } }
     main .main__first-design .main__sixth-block .sixth-block__rpmVHR-screen-values {
       position: absolute;
+      display: flex;
       top: 30%;
       left: 35%;
       width: 30%;
-      height: 22px;
-      text-align: center;
+      height: 8%;
+      justify-content: center;
+      align-items: center;
       background: radial-gradient(#646464, #1e1e1e);
       border-radius: 5px;
       box-shadow: 0 0 2px 1px white, 0 0 4px 2px rgba(255, 255, 255, 0.8); }
       main .main__first-design .main__sixth-block .sixth-block__rpmVHR-screen-values p {
-        font-size: 1.2rem;
+        font-size: 3vw;
         font-family: Aldrich, arial, sans-serif;
         margin-block-start: 0em;
         margin-block-end: 0em; }
@@ -529,8 +531,8 @@ main .main__first-design {
       width: 45%;
       position: absolute;
       top: calc(50% - 6px);
-      left: 5.3%;
-      height: 12px;
+      left: 5%;
+      height: 4%;
       border-radius: 10px;
       background: linear-gradient(180deg, transparent, red 49%, red 51%, transparent), linear-gradient(180deg, transparent 40%, rgba(255, 0, 0, 0.8) 48%, rgba(255, 0, 0, 0.8) 52%, transparent 60%), linear-gradient(180deg, transparent 35%, rgba(255, 0, 0, 0.7) 47%, rgba(255, 0, 0, 0.7) 53%, transparent 65%), linear-gradient(180deg, transparent 30%, rgba(255, 0, 0, 0.6) 46%, rgba(255, 0, 0, 0.6) 54%, transparent 70%);
       clip-path: polygon(100% 0%, 100% 100%, 0% 65%, 0% 35%);
@@ -540,7 +542,7 @@ main .main__first-design {
     main .main__first-design .main__sixth-block .sixth-block__rpmVHR-point {
       position: absolute;
       top: 42.5%;
-      left: 42.5%;
+      left: calc(42.5% - .3px);
       width: 15%;
       height: 15%;
       border-radius: 100px;
@@ -563,26 +565,26 @@ main .main__first-design {
         content: "";
         position: absolute;
         width: 70%;
-        height: 100%;
+        height: 110%;
         top: 20%;
         left: 15%;
         border-radius: 10px;
-        background: linear-gradient(90deg, #191919, #191919 42.5%, black 42.5%, black 57.5%, #191919 57.5%);
-        clip-path: polygon(90% 0%, 10% 0%, 25% 100%, 75% 100%); }
+        background: linear-gradient(90deg, #1e1e1e 30%, #0a0a0a 45%, #0a0a0a 55%, #1e1e1e 70%);
+        clip-path: polygon(100% 0%, 0% 0%, 15% 100%, 85% 100%); }
     main .main__first-design .main__sixth-block .sixth-block__speed {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 60px;
-      height: 60px;
+      width: 10vw;
+      height: 10vw;
       position: absolute;
       bottom: 15%;
       right: 20%;
       background: radial-gradient(#646464, #1e1e1e);
-      border-radius: 50px;
+      border-radius: 1000px;
       box-shadow: 0 0 2px 1px white, 0 0 4px 2px rgba(255, 255, 255, 0.8); }
       main .main__first-design .main__sixth-block .sixth-block__speed p {
-        font-size: 1.6rem;
+        font-size: 4vw;
         font-family: Aldrich, arial, sans-serif;
         color: white;
         text-shadow: 0 0 2px white, 0 0 4px rgba(255, 255, 255, 0.6); }
@@ -599,54 +601,54 @@ main .main__first-design {
       background: radial-gradient(#4b4b4b, #1e1e1e);
       box-shadow: 0 0 2px 1px white, 0 0 4px 2px rgba(255, 255, 255, 0.8); }
       main .main__first-design .main__sixth-block .sixth-block__gear p {
-        font-size: 1.2rem;
+        font-size: 3vw;
         font-family: Aldrich, arial, sans-serif;
         color: white;
         text-shadow: 0 0 2px white, 0 0 4px rgba(255, 255, 255, 0.6); }
   main .main__first-design .main__sixth-block_shadow {
-    width: 280px;
-    height: 280px;
+    width: 45vw;
+    height: 45vw;
     position: absolute;
-    top: calc(50% - 140px);
-    left: calc(50% - 140px);
+    top: calc(50% - 22.5vw);
+    left: calc(50% - 22.5vw);
     background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, #111111 65%, black 100%), radial-gradient(black, #323232 100%);
     border-radius: 1000px; }
     main .main__first-design .main__sixth-block_shadow::before {
       content: "";
-      width: 280px;
-      height: 280px;
+      width: 45vw;
+      height: 45vw;
       position: absolute;
-      top: calc(50% - 140px);
-      left: calc(50% - 140px);
-      background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 40%, rgba(220, 40, 40, 0.8) 55%, rgba(220, 20, 2, 0.8) 63%, rgba(0, 0, 0, 0) 66%, rgba(0, 0, 0, 0) 100%);
+      top: calc(50% - 22.5vw);
+      left: calc(50% - 22.5vw);
+      background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 40%, rgba(255, 20, 30, 0.8) 55%, rgba(255, 20, 0, 0.8) 63%, rgba(0, 0, 0, 0) 66%, rgba(0, 0, 0, 0) 100%);
       clip-path: polygon(50% 50%, 100% 50%, 100% 17%);
       border-radius: 1000px; }
     main .main__first-design .main__sixth-block_shadow::after {
       content: "";
+      width: 45vw;
+      height: 45vw;
       position: absolute;
-      top: calc(50% - 140px);
-      left: calc(50% - 140px);
-      width: 280px;
-      height: 280px;
-      background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 40%, rgba(200, 220, 40, 0.8) 55%, rgba(201, 224, 20, 0.8) 63%, rgba(0, 0, 0, 0) 66%, rgba(0, 0, 0, 0) 100%);
-      clip-path: polygon(50% 50%, 100% 17%, 91.5% 1%);
+      top: calc(50% - 22.5vw);
+      left: calc(50% - 22.5vw);
+      background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 40%, rgba(225, 255, 30, 0.8) 55%, rgba(225, 255, 0, 0.8) 63%, rgba(0, 0, 0, 0) 66%, rgba(0, 0, 0, 0) 100%);
+      clip-path: polygon(50% 50%, 100% 17%, 90.5% 1%);
       border-radius: 1000px; }
   main .main__first-design .main__sixth-block_shadow-red-zone {
-    width: 280px;
-    height: 280px;
+    width: 45vw;
+    height: 45vw;
     position: absolute;
-    top: calc(50% - 140px);
-    left: calc(50% - 140px);
+    top: calc(50% - 22.5vw);
+    left: calc(50% - 22.5vw);
     background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 59%, red 59%, red 62%, rgba(0, 0, 0, 0) 62%, rgba(0, 0, 0, 0) 100%);
-    clip-path: polygon(50% 50%, 100% 51%, 95% 19%);
+    clip-path: polygon(50% 50%, 100% 51%, 95% 18.5%);
     border-radius: 1000px;
     z-index: 5; }
   main .main__first-design .main__sixth-block_shadow-rotate {
-    width: 280px;
-    height: 280px;
+    width: 45vw;
+    height: 45vw;
     position: absolute;
-    top: calc(50% - 140px);
-    left: calc(50% - 140px);
+    top: calc(50% - 22.5vw);
+    left: calc(50% - 22.5vw);
     background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, #111111 65%, black 100%), radial-gradient(black, #323232 100%);
     border-radius: 1000px;
     clip-path: polygon(50% 50%, 50% 100%, 0% 100%, 0% 0%, 100% 0%, 100% 50%); }
