@@ -95,6 +95,15 @@ main .main__first-design {
     border-radius: 2000px;
     box-shadow: 0px 0px 10px 10px black;
     z-index: 5; }
+    main .main__first-design .main__sixth-block::before {
+      content: "";
+      width: 52vw;
+      height: 52vw;
+      position: absolute;
+      top: calc(50% - 26vw);
+      left: calc(50% - 26vw);
+      background: radial-gradient(rgba(0, 0, 0, 0) 60%, #c8c8c8 61%, #1e1e1e 62.5%, #c8c8c8 66%, #1e1e1e 66%, rgba(0, 0, 0, 0) 70%);
+      z-index: 5; }
     main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values {
       width: 45vw;
       height: 45vw;
@@ -137,7 +146,7 @@ main .main__first-design {
         main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-35::before,
         main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-40::before {
           position: absolute;
-          top: 125%; }
+          top: 100%; }
       main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-0 {
         animation-name: rpmVHR-values-0; }
         main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-0::before {
@@ -317,7 +326,7 @@ main .main__first-design {
         animation-name: rpmVHR-values-20; }
         main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values #rpmVHR-values-20::before {
           content: "4";
-          left: calc(50% - 2vw / 2);
+          left: calc(50% - 2.5vw / 2);
           transform: rotate(45deg); }
 
 @keyframes rpmVHR-values-20 {
@@ -516,10 +525,10 @@ main .main__first-design {
     main .main__first-design .main__sixth-block .sixth-block__rpmVHR-screen-values {
       position: absolute;
       display: flex;
-      top: 30%;
-      left: 35%;
-      width: 30%;
-      height: 8%;
+      top: 29%;
+      left: 33.5%;
+      width: 33%;
+      height: 9%;
       justify-content: center;
       align-items: center;
       background: radial-gradient(#646464, #1e1e1e);
@@ -527,9 +536,9 @@ main .main__first-design {
       box-shadow: 0 0 2px 1px white, 0 0 4px 2px rgba(255, 255, 255, 0.8); }
       main .main__first-design .main__sixth-block .sixth-block__rpmVHR-screen-values p {
         font-size: 3vw;
+        letter-spacing: .25vw;
         font-family: Aldrich, arial, sans-serif;
-        margin-block-start: 0em;
-        margin-block-end: 0em; }
+        padding-top: .25vw; }
     main .main__first-design .main__sixth-block .sixth-block__rpmVHR-arrow {
       width: 45%;
       position: absolute;
