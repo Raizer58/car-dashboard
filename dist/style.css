@@ -5,11 +5,14 @@
 body {
   margin: 0px;
   background: black; }
+  body .wrapper {
+    height: 100vh;
+    overflow: hidden; }
 
 main .main__first-design {
   display: flex;
   height: 82vh;
-  margin: 5% 0%;
+  padding: 5% 0%;
   position: relative;
   flex-wrap: wrap;
   background: black; }
