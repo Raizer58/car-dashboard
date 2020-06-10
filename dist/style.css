@@ -5,6 +5,10 @@
 body {
   margin: 0px;
   background: black; }
+  body .wrapper {
+    width: 94vw;
+    margin-left: auto;
+    margin-right: auto; }
 
 main .main__first-design {
   display: flex;
