@@ -558,7 +558,7 @@ main .main__first-design {
       left: 5%;
       height: 4%;
       border-radius: 10px;
-      background: linear-gradient(180deg, transparent 35%, #ff8200 49%, #ff8200 51%, transparent 65%), linear-gradient(180deg, transparent 10%, rgba(255, 0, 0, 0.8) 47%, rgba(255, 0, 0, 0.8) 53%, transparent 10%), linear-gradient(180deg, transparent 10%, rgba(255, 0, 0, 0.7) 35%, rgba(255, 0, 0, 0.7) 65%, transparent 90%);
+      background: linear-gradient(180deg, transparent 35%, red 49%, red 51%, transparent 65%), linear-gradient(180deg, transparent 10%, rgba(255, 0, 0, 0.8) 47%, rgba(255, 0, 0, 0.8) 53%, transparent 10%), linear-gradient(180deg, transparent 10%, rgba(255, 0, 0, 0.7) 35%, rgba(255, 0, 0, 0.7) 65%, transparent 90%);
       clip-path: polygon(100% 0%, 100% 100%, 0% 65%, 0% 35%);
       transform-origin: 242% 50%;
       transition: transform .05s ease-in-out;
