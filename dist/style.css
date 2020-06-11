@@ -558,8 +558,8 @@ main .main__first-design {
       left: 5%;
       height: 4%;
       border-radius: 10px;
-      background: linear-gradient(180deg, transparent, #ff7878 49%, #ff7878 51%, transparent), linear-gradient(180deg, transparent 27%, rgba(255, 120, 120, 0.3) 47%, rgba(255, 120, 120, 0.3) 53%, transparent 73%), linear-gradient(180deg, transparent 20%, rgba(255, 120, 120, 0.2) 45%, rgba(255, 120, 120, 0.2) 55%, transparent 80%), linear-gradient(180deg, transparent 13%, rgba(255, 120, 120, 0.1) 43%, rgba(255, 120, 120, 0.1) 57%, transparent 87%);
-      clip-path: polygon(100% 0%, 100% 100%, 0% 70%, 0% 30%);
+      background: linear-gradient(180deg, transparent, red 49%, red 51%, transparent), linear-gradient(180deg, transparent 27%, rgba(255, 0, 0, 0.5) 47%, rgba(255, 0, 0, 0.5) 53%, transparent 73%), linear-gradient(180deg, transparent 20%, rgba(255, 0, 0, 0.4) 45%, rgba(255, 0, 0, 0.4) 55%, transparent 80%), linear-gradient(180deg, transparent 13%, rgba(255, 0, 0, 0.3) 43%, rgba(255, 0, 0, 0.3) 57%, transparent 87%);
+      clip-path: polygon(100% 0%, 100% 100%, 0% 65%, 0% 35%);
       transform-origin: 242% 50%;
       transition: transform .05s ease-in-out;
       z-index: 5; }
