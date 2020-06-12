@@ -102,7 +102,7 @@ main .main__first-design {
       position: absolute;
       top: calc(50% - 26vw);
       left: calc(50% - 26vw);
-      background: radial-gradient(rgba(0, 0, 0, 0) 60%, #c8c8c8 61%, #1e1e1e 62.5%, #c8c8c8 66%, #1e1e1e 66%, rgba(0, 0, 0, 0) 70%);
+      background: radial-gradient(rgba(0, 0, 0, 0) 60%, #c8c8c8 61%, #1e1e1e 62.5%, #c8c8c8 66%, #1e1e1e 67%, rgba(0, 0, 0, 0) 70%);
       z-index: 5; }
     main .main__first-design .main__sixth-block .sixth-block__rpmVHR-values {
       width: 45vw;
@@ -530,12 +530,7 @@ main .main__first-design {
       width: 33%;
       height: 9%;
       justify-content: center;
-      align-items: center;
-      /*background: radial-gradient(rgb(100, 100, 100), rgb(30, 30, 30));
-        border-radius: 5px;
-        box-shadow:
-            0 0 2px 1px rgb(255, 255, 255),
-            0 0 4px 2px rgba(255, 255, 255, 0.8);*/ }
+      align-items: center; }
       main .main__first-design .main__sixth-block .sixth-block__rpmVHR-display-values p {
         font-size: 3vw;
         letter-spacing: .25vw;
@@ -565,12 +560,6 @@ main .main__first-design {
       transform-origin: 242% 50%;
       transition: transform .05s ease-in-out;
       z-index: 5; }
-    main .main__first-design .main__sixth-block .sixth-block__rpmVHR-arrow-change-gear_white {
-      background: linear-gradient(180deg, transparent 25%, white 49%, white 51%, transparent 75%), linear-gradient(180deg, transparent 10%, rgba(255, 255, 255, 0.8) 47%, rgba(255, 255, 255, 0.8) 53%, transparent 10%), linear-gradient(180deg, transparent 10%, rgba(255, 255, 255, 0.7) 35%, rgba(255, 255, 255, 0.7) 65%, transparent 90%); }
-    main .main__first-design .main__sixth-block .sixth-block__rpmVHR-arrow-change-gear_yellow {
-      background: linear-gradient(180deg, transparent 25%, yellow 49%, yellow 51%, transparent 75%), linear-gradient(180deg, transparent 10%, rgba(255, 255, 0, 0.8) 47%, rgba(255, 255, 0, 0.8) 53%, transparent 10%), linear-gradient(180deg, transparent 10%, rgba(255, 255, 0, 0.7) 35%, rgba(255, 255, 0, 0.7) 65%, transparent 90%); }
-    main .main__first-design .main__sixth-block .sixth-block__rpmVHR-arrow-change-gear_red {
-      background: linear-gradient(180deg, transparent 25%, red 49%, red 51%, transparent 75%), linear-gradient(180deg, transparent 10%, rgba(255, 0, 0, 0.8) 47%, rgba(255, 0, 0, 0.8) 53%, transparent 10%), linear-gradient(180deg, transparent 10%, rgba(255, 0, 0, 0.7) 35%, rgba(255, 0, 0, 0.7) 65%, transparent 90%); }
     main .main__first-design .main__sixth-block .sixth-block__rpmVHR-point {
       position: absolute;
       top: 44%;
